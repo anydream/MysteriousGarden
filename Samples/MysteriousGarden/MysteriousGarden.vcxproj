@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD50C5D0-3F20-402B-8729-76B0F84EE88B}</ProjectGuid>
+    <RootNamespace>MysteriousGarden</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\..\bin\</OutDir>
+    <IntDir>$(SolutionDir)\..\..\bin\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AudioSystem\AudioSystem.cpp" />
+    <ClCompile Include="..\..\AudioSystem\Wequ.cpp" />
+    <ClCompile Include="..\..\AudioSystem\Wmp3.cpp" />
+    <ClCompile Include="..\..\AudioSystem\Wmp3Decoder.cpp" />
+    <ClCompile Include="..\..\AudioSystem\WWave.cpp" />
+    <ClCompile Include="..\..\Core\Animation.cpp" />
+    <ClCompile Include="..\..\Core\Color.cpp" />
+    <ClCompile Include="..\..\Core\Node.cpp" />
+    <ClCompile Include="..\..\Core\Quad.cpp" />
+    <ClCompile Include="..\..\Core\Vector4.cpp" />
+    <ClCompile Include="..\..\FileSystem\FileSystem.cpp" />
+    <ClCompile Include="..\..\FrameWork\Application.cpp" />
+    <ClCompile Include="..\..\FrameWork\Logger.cpp" />
+    <ClCompile Include="..\..\FrameWork\NodeManager.cpp" />
+    <ClCompile Include="..\..\FrameWork\SceneManager.cpp" />
+    <ClCompile Include="..\..\InputSystem\InputSystem.cpp" />
+    <ClCompile Include="..\..\RenderSystem\Font.cpp" />
+    <ClCompile Include="..\..\RenderSystem\RenderSystem.cpp" />
+    <ClCompile Include="..\..\RenderSystem\Texture.cpp" />
+    <ClCompile Include="..\..\Sprites\GUI.cpp" />
+    <ClCompile Include="..\..\Sprites\Sprite.cpp" />
+    <ClCompile Include="..\..\Utils.cpp" />
+    <ClCompile Include="..\SampleApp.cpp" />
+    <ClCompile Include="GameInf.cpp" />
+    <ClCompile Include="GameMap.cpp" />
+    <ClCompile Include="MainInf.cpp" />
+    <ClCompile Include="MapBase.cpp" />
+    <ClCompile Include="Maps.cpp" />
+    <ClCompile Include="MysteriousGarden.cpp" />
+    <ClCompile Include="Role.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\AnyPlay.h" />
+    <ClInclude Include="..\..\AudioSystem\AudioSystem.h" />
+    <ClInclude Include="..\..\AudioSystem\Wequ.h" />
+    <ClInclude Include="..\..\AudioSystem\Wmp3.h" />
+    <ClInclude Include="..\..\AudioSystem\Wmp3Decoder.h" />
+    <ClInclude Include="..\..\AudioSystem\WWave.h" />
+    <ClInclude Include="..\..\Core\Animation.h" />
+    <ClInclude Include="..\..\Core\Color.h" />
+    <ClInclude Include="..\..\Core\Flexible.h" />
+    <ClInclude Include="..\..\Core\Node.h" />
+    <ClInclude Include="..\..\Core\Quad.h" />
+    <ClInclude Include="..\..\Core\String.h" />
+    <ClInclude Include="..\..\Core\Timer.h" />
+    <ClInclude Include="..\..\Core\Vector4.h" />
+    <ClInclude Include="..\..\FileSystem\FileSystem.h" />
+    <ClInclude Include="..\..\FrameWork\Application.h" />
+    <ClInclude Include="..\..\FrameWork\Event.h" />
+    <ClInclude Include="..\..\FrameWork\Interface.h" />
+    <ClInclude Include="..\..\FrameWork\Logger.h" />
+    <ClInclude Include="..\..\FrameWork\Manager.h" />
+    <ClInclude Include="..\..\FrameWork\NodeManager.h" />
+    <ClInclude Include="..\..\FrameWork\SceneManager.h" />
+    <ClInclude Include="..\..\FrameWork\Singleton.h" />
+    <ClInclude Include="..\..\InputSystem\InputSystem.h" />
+    <ClInclude Include="..\..\RenderSystem\Font.h" />
+    <ClInclude Include="..\..\RenderSystem\RenderSystem.h" />
+    <ClInclude Include="..\..\RenderSystem\Texture.h" />
+    <ClInclude Include="..\..\Sprites\GUI.h" />
+    <ClInclude Include="..\..\Sprites\Sprite.h" />
+    <ClInclude Include="..\..\Utils.h" />
+    <ClInclude Include="..\SampleApp.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameInf.h" />
+    <ClInclude Include="MainInf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
