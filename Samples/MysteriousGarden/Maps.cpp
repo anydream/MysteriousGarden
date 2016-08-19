@@ -423,7 +423,7 @@ namespace AnyPlay
 
 		AddSwitch(gi, 0, 17, 7, MB_END);
 
-		gi->m_Map.SaveMap(_T("地图.txt"));
+		//gi->m_Map.SaveMap(_T("地图.txt"));
 		//////////////////////////////////////////////////////////////////////////
 		as->MP3Buffers.Add(new Buffer(_T("冻原"), _T("Data\\冻原.mp3")));//通过.mp3
 		as->MP3Buffers.Add(new Buffer(_T("通过"), _T("Data\\通过.mp3")));

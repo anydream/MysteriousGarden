@@ -129,6 +129,8 @@ namespace AnyPlay
 			fontSong->DrawFont(strFPS, -1, &Rect(0, 0, 200, 20), DT_LEFT, 0xFFFF0000);
 		}
 		rs->EndScene(NULL);
+
+		Sleep(1);
 	}
 
 	LRESULT SampleApp::OnWindowMessage(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
